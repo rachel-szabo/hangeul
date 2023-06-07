@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Catesoge';
+    src: url('/fonts/Catesoge.ttf') format('truetype');
+}
+
+#root {
+    position: fixed;
+    top: 7vh;
+    border: 0.7px solid #D0DAEA;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    touch-action: none;      /* necessary for preventing gesture conflicts on mobile/touchscreens */
+}
+
+html,
+body {
+    position: fixed;
+    top: 0vh;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0.7px solid #D0DAEA;
+    background: linear-gradient(90deg, #5D96DD, rgba(201, 152, 174, 0.852), #DEC183 85%);
+    /* background: linear-gradient(90deg, #1643A7, #f17f6660, #63AE9B 85%); */
+    color: #D0DAEA;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    touch-action: none;
+}
+
+.nav, nav {                
+    height: 7vh;
+    top: 0;
+    padding-top: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    left: 0;
+}
+
+.nav {
+    width: 100vw;
+    position: fixed;
+}
+
+.navLink, nav a {
+    padding-top: 1.7vh;
+    padding-bottom: 2vh;
+    border-left: 0.7px solid #D0DAEA;
+    border-right: 0.7px solid #D0DAEA;
+    flex-grow: 1;
+    text-align: center;
+    transition: 0.4s;
+    user-select: none;
+    width: 25vw;
+}
+
+.navLink:hover, nav a:hover {
+    background-color: #d0daea4d;
+    letter-spacing: 7px;
+    flex-grow: 1.2;
+}
+
+.btn {
+    text-align: center;
+    background-color: rgba(255, 218, 185, 0.868);
+    width: 8rem;
+    height: 8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #809DD9;
+    border-radius: 50%;
+    padding: 0.8rem;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    border: 1px outset rgba(250, 205, 132, 0.849);
+    transition: 0.4s;
+    user-select: none;
+    font-size: 1.3rem;
+}
+/* .btn:first-of-type {
+    padding: 0.8rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+} */
+
+.btn:hover {
+    /* background-color: #809ed978; */
+    background-color: #6696da98;
+    color: rgba(255, 218, 185, 0.868);
+    border: 1px inset rgba(250, 205, 132, 0.849);
+}
+
+.triButtons {
+    text-align: center;
+    align-items: center;
+    
+}
